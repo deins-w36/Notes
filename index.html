@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>Notes</title>
+</head>
+<body>
+    
+    <h1 class="title title_title">Заметки</h1>
+    <h2 class="title title_add-note">Добавить заметку</h2>
+
+    <form class="form">
+        <input class="inp" name="header" id="header" type="text" placeholder="Введите заголовок">
+        <textarea class="inp" placeholder="Введите заметку" name="note" id="note" wrap="soft"></textarea>
+        <div class="btn">
+            <button class="btn__remove">Отчистить поля</button>
+            <button class="btn__add">Добавить</button>
+        </div>
+    </form>
+
+    <div class="notes">
+
+        <!-- <div class="notes__item">
+            <div class="notes__header" id="Firstheader">Заголовок</div>
+            <div class="notes__text" id="Firsttext">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam enim est nobis voluptatum molestias. Velit nostrum totam quas soluta. Quam laboriosam nam numquam alias eveniet quibusdam laudantium soluta reiciendis. Nobis?</div>
+
+            <div class="notes__btns">
+                <button class="notes__btn edit">Редактировать</button>
+                <button class="notes__btn remove">Удалить</button>
+            </div>
+        </div> -->
+
+    </div>
+    
+
+    <div class="modal">
+        <div class="modal__edit">
+            <div class="modal__header">Редактирование заметки</div>
+            <div class="modal__inputs">
+                <input class="modal__input modal__inp" type="text">
+                <textarea class="modal__input modal__textarea" wrap="soft"></textarea>
+            </div>
+            <button class="modal__save">Сохранить</button>
+        </div>
+    </div>
+
+
+    <script src="js/script.js"></script>
+</body>
+</html>

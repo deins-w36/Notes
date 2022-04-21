@@ -1,0 +1,58 @@
+.notes {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    &__item {
+        position: relative;
+        width: 60%;
+        border: 2px solid black;
+        background-color: #fff;
+        min-height: 170px;
+        border-radius: 20px;
+        margin-bottom: 20px;
+        &:hover {
+            .notes__btn {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+
+    &__header {
+        height: 30%;
+        padding: 10px;
+        font-weight: 500;
+        font-size: 20px;
+        border-bottom: 1px solid black;
+    }
+    &__text {
+        height: 70%;
+        font-weight: 400;
+        padding: 10px;
+        font-size: 17px;
+    }
+
+    &__btns {
+        position: absolute;
+        z-index: 1;
+        top: 2px;
+        right: 2px;
+    }
+
+    &__btn {
+        width: 150px;
+        height: 40px;
+        font-size: 14px;
+        background-color: #000;
+        border-radius: 20px;
+        color: #fff;
+        cursor: pointer;
+        opacity: 0;
+        visibility: hidden;
+        transition: 0.5s all;
+    }
+}
